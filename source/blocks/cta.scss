@@ -1,0 +1,62 @@
+.cta {
+    padding-top: 48px;
+
+    @media (min-width: $w768) {
+        padding-top: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc((100% - 16px * 7 - 48px) / 8 * 6 + 16px * 5);
+
+        text-align: center;
+    }
+
+    @media (min-width: $w1024) {
+        padding-top: 104px;
+        width: calc((100% - 16px * 11 - 48px) / 12 * 8 + 16px * 7);
+    }
+}
+
+.cta__message {
+    margin-bottom: 24px;
+
+    display: block;
+
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+
+    @media (min-width: $w768) {
+        margin-bottom: 40px;
+
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.cta__text {
+    margin: 0;
+    margin-bottom: 32px;
+
+    @media (min-width: $w768) {
+        margin-bottom: 64px;
+    }
+}
+
+.cta__social-links {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
+
+    @media (min-width: $w768) {
+        margin-bottom: 130px;
+    }
+
+    @media (min-width: $w1024) {
+        margin-bottom: 147px;
+    }
+}
+
+.cta .page__hr-2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

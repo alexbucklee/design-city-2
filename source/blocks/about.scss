@@ -1,0 +1,87 @@
+.about {
+    padding-bottom: 79px;
+
+    & .page__row {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $w768) {
+        padding-bottom: 135px;
+    }
+}
+
+.about__title {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 92px;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 64px;
+        position: absolute;
+        bottom: -72px;
+        left: 0;
+        right: -16px;
+        max-width: 336px;
+        background-image: url("../img/dest/images/since2001.svg");
+    }
+
+
+    @media (min-width: $w768) {
+        margin: 0;
+    }
+}
+
+.about__text {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.about .page__hr-2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (min-width: $w768) {
+        margin-top: 7px;
+        margin-bottom: 48px;
+    }
+
+    @media (min-width: $w1024) {
+        margin-top: 31px;
+    }
+}
+
+.about__amount {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 28px;
+
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+
+    @media (min-width: $w768) {
+        margin-top: 99px;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    @media (min-width: $w1024) {
+        margin-top: 156px;
+    }
+}
+
+.about__amount-map {
+    min-height: 400px;
+    background-color: #c4c4c4;
+
+    @media (min-width: $w768) {
+        min-height: 640px;
+    }
+
+    @media (min-width: $w1024) {
+        min-height: 656px;
+    }
+}

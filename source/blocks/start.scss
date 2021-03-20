@@ -1,0 +1,142 @@
+.start {
+    box-sizing: border-box;
+    padding-bottom: 79px;
+
+    position: relative;
+
+    @media (min-width: $w768) {
+        padding-top: 40px;
+        padding-bottom: 0;
+        min-height: 64.063vw;
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.start__col-1 {
+    @media (min-width: $w768) {
+        position: relative;
+        z-index: 1;
+
+        width: calc((100% - 48px - 16px * 11) / 12 * 6 + 16px * 5);
+    }
+}
+
+.start__message-text {
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 9.38vw;
+    line-height: 12.5vw;
+
+    @media (min-width: $w768) {
+        margin: 0;
+        margin-bottom: 3.906vw;
+
+        font-size: 4.688vw;
+        line-height: 5.469vw;
+    }
+}
+
+.start__message-subtext {
+    margin: 0;
+    margin-bottom: 32px;
+
+    @media (min-width: $w768) {
+        margin-bottom: 7.031vw;
+    }
+}
+
+.start__image {
+    position: relative;
+    min-height: 400px;
+
+    @media (min-width: $w768) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 59.375vw;
+        height: 100%;
+    }
+}
+
+.start__image--sketch {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/dest/images/start-image-sketch-320.webp");
+    background-size: cover;
+
+    .no-webp & {
+        background-image: url("../img/dest/images/start-image-sketch-320.png");
+    }
+
+    @media (min-width: $w768) {
+        background-image: url("../img/dest/images/start-image-sketch-1024.webp");
+    }
+}
+
+.start__image--color {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/dest/images/start-image-color-320.webp");
+    background-size: cover;
+
+    .no-webp & {
+        background-image: url("../img/dest/images/start-image-color-320.png");
+    }
+
+    @media (min-width: $w768) {
+        width: 49.219vw;
+        right: 0;
+
+        background-image: url("../img/dest/images/start-image-color-1024.webp");
+
+        .no-webp & {
+            background-image: url("../img/dest/images/start-image-color-1024.png");
+        }
+    }
+}
+
+.start__hr {
+    margin: 0;
+    margin-top: 43px;
+    margin-bottom: 16px;
+    border: none;
+
+    height: 1px;
+    width: 80px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+
+    @media (min-width: $w768) {
+        margin-top: 7.813vw;
+    }
+}
+
+.start__address {
+    margin: 0;
+
+    font-size: 14px;
+
+    @media (min-width: $w768) {
+        margin-bottom: 0;
+        margin-top: auto;
+    }
+}
+
+.start__logo {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+
+    @media (min-width: $w768) {
+        position: static;
+        margin-bottom: 11.719vw;
+    }
+}

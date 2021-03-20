@@ -1,0 +1,70 @@
+.request-form__input {
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 16px;
+    font: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    display: block;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        border-color: rgba($color: #000000, $alpha: 0.85);
+    }
+
+    &:focus {
+        padding-left: 23px;
+        padding-right: 23px;
+        outline: none;
+        border: 2px solid $accent-color;
+    }
+
+    @media (min-width: $w768) {
+        margin-bottom: 32px;
+    }
+}
+
+.request-form__checkbox {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    display: block;
+
+    @media (min-width: $w768) {
+        margin: 0;
+    }
+}
+
+.request-form__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @media (min-width: $w768) {
+        margin: 0;
+    }
+}
+
+.request-form__input-wrapper {
+    
+    @media (min-width: $w768) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.request-form__input--name {
+    
+    @media (min-width: $w768) {
+        margin-right: 16px;
+    }
+}

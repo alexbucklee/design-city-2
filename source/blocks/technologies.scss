@@ -1,0 +1,180 @@
+.technologies {
+    padding-top: 80px;
+    padding-bottom: 78px;
+
+    @media (min-width: $w768) {
+        padding-top: 144px;
+        padding-bottom: 131px;
+    }
+
+    @media (min-width: $w1024) {
+        padding-bottom: 147px;
+    }
+}
+
+.technologies__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: $accent-color;
+
+    & span {
+        opacity: 0.4;
+    }
+
+    @media (min-width: $w768) {
+        position: sticky;
+        top: 128px;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            width: calc(50% + 24px);
+            top: -128px;
+            bottom: -16px;
+            left: -24px;
+
+            position: absolute;
+            z-index: -1;
+
+            background-color: rgba($color: #fff, $alpha: 0.4);
+            background: linear-gradient(180deg, #FFFFFF 25%, rgba(255, 255, 255, 0.4) 100%);
+
+            backdrop-filter: blur(32px);
+        }
+    }
+
+    @media (min-width: $w1024) {
+        margin-bottom: 16px;
+    }
+}
+
+.technologies__subtitle {
+    display: block;
+    margin: 0;
+    margin-bottom: 24px;
+
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.technologies__text {
+    margin: 0;
+    margin-bottom: 24px;
+
+    @media (min-width: $w768) {
+        margin: 0;
+    }
+}
+
+.technologies__image {
+    min-height: 90vw;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    margin-bottom: 64px;
+    background-size: cover;
+
+    &--light {
+        background-image: url("../img/dest/images/technologies-light-320.webp");
+    }
+
+    &--table {
+        background-image: url("../img/dest/images/technologies-table-320.webp");
+    }
+
+    &--facades {
+        background-image: url("../img/dest/images/technologies-facades-320.webp");
+    }
+
+    &--furniture {
+        background-image: url("../img/dest/images/technologies-furniture-320.webp");
+    }
+
+    &--appliances {
+        background-image: url("../img/dest/images/technologies-appliances-320.webp");
+    }
+
+    @media (min-width: $w768) {
+        min-height: auto;
+        margin: 0;
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+.no-webp .technologies__image {
+
+    &--light {
+        background-image: url("../img/dest/images/technologies-light-320.jpg");
+    }
+
+    &--table {
+        background-image: url("../img/dest/images/technologies-table-320.jpg");
+    }
+
+    &--facades {
+        background-image: url("../img/dest/images/technologies-facades-320.jpg");
+    }
+
+    &--furniture {
+        background-image: url("../img/dest/images/technologies-furniture-320.jpg");
+    }
+
+    &--appliances {
+        background-image: url("../img/dest/images/technologies-appliances-320.jpg");
+    }
+}
+
+.technologies__request {
+    text-align: center;
+
+    @media (min-width: $w768) {
+        margin-top: -128px;
+    }
+
+    @media (min-width: $w1024) {
+        margin-top: -56px;
+    }
+}
+
+.technologies__request-text {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 48px;
+
+    @media (min-width: $w768) {
+        margin-top: 24px;
+    }
+}
+
+.technologies__item {
+    @media (min-width: $w768) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: start;
+
+        margin-bottom: 256px;
+    }
+
+    @media (min-width: $w1024) {
+        margin-bottom: 184px;
+    }
+}
+
+.technologies__col-1 {
+    @media (min-width: $w768) {
+        top: 256px;
+        position: sticky;
+    }
+
+    @media (min-width: $w1024) {
+        top: 216px;
+    }
+}
+
+.technologies__mask {
+    z-index: 2;
+    background-color: #fff;
+}

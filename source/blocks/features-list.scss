@@ -1,0 +1,38 @@
+.features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $w768) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 52px;
+    }
+
+    @media (min-width: $w1024) {
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+        grid-column-gap: normal;
+    }
+}
+
+.features-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    line-height: 22px;
+
+    @media (min-width: $w768) {
+        margin: 0;
+    }
+}
+
+.features-list__icon {
+    margin-right: 16px;
+    min-width: 40px;
+
+    fill: $accent-color;
+    opacity: 0.75;
+}
