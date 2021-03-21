@@ -1,14 +1,20 @@
 .page {
     height: 100%;
 
+    @media (min-width: 1440px) {
+        font-size: 1.1vw;
+    }
+}
+
+.page__body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: .875rem;
+    line-height: 1.5rem;
 
     color: $black85;
 
     @media (min-width: $w1024) {
-        font-size: 15px;
+        font-size: .9375rem;
     }
 }
 
@@ -21,7 +27,7 @@ img {
 .page__main {
     background-color: #fff;
     
-    margin-top: 816px;
+    margin-top: 51rem;
 }
 
 .page__start-margin {
@@ -31,13 +37,13 @@ img {
 
     @media (min-width: $w768) {
         display: block;
-        height: 548px;
-        margin-bottom: 155px;
+        height: 34.25rem;
+        margin-bottom: 9.6875rem;
     }
 
     @media (min-width: $w1024) {
-        margin-bottom: 158px;
-        height: 656px;
+        margin-bottom: 9.875rem;
+        height: 41rem;
     }
 }
 
@@ -48,18 +54,18 @@ img {
 }
 
 .page__container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @media (min-width: $w768) {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     @media (min-width: $w1280) {
-        max-width: 1232px;
-        padding-left: 32px;
-        padding-right: 32px;
+        max-width: 77rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -67,23 +73,23 @@ img {
 
 .page__section-title {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2.25rem;
 }
 
 .page__row {
 
     @media (min-width: $w768) {
-        margin-top: 40px;
-        margin-bottom: 23px;
+        margin-top: 2.5rem;
+        margin-bottom: 1.4375rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 16px;
+        column-gap: 1rem;
         align-items: start;
     }
 
     @media (min-width: $w1024) {
-        margin-bottom: 47px;
+        margin-bottom: 2.9375rem;
     }
 }
 
@@ -114,7 +120,7 @@ img {
 .page__br--tablet {
     display: none;
 
-    @media (min-width: $w768) and (max-width: 1023.9px) {
+    @media (min-width: $w768) and (max-width: 63.99375rem) {
         display: inline;
     }
 }

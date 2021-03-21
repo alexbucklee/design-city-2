@@ -7,8 +7,8 @@
 }
 
 .social-links__icon {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
 
     fill: #000;
     opacity: 0.6;
@@ -24,7 +24,7 @@
 
 .social-links__item {
 
-    margin-right: 24px;
+    margin-right: 1.5rem;
 
     &:nth-child(1) {
         .social-links__icon:hover {

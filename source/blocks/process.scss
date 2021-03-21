@@ -1,17 +1,18 @@
 .process__title {
     margin: 0;
-    margin-top: 40px;
-    margin-bottom: 96px;
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
     position: relative;
 
     &::after {
         content: "";
-        height: 56px;
+        height: 3.5rem;
         position: absolute;
-        bottom: -64px;
+        bottom: -4rem;
         left: 0;
-        width: 248px;
+        width: 15.5rem;
         background-image: url("../img/dest/images/5steps.svg");
+        background-size: cover;
     }
 
     @media (min-width: $w768) {
@@ -24,15 +25,15 @@
     padding: 0;
     list-style: none;
 
-    margin-top: 48px;
+    margin-top: 3rem;
 
     @media (min-width: $w768) {
-        margin-top: 8px;
+        margin-top: .5rem;
     }
 }
 
 .process__steps-item {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 
     display: flex;
 
@@ -42,24 +43,24 @@
 }
 
 .process__emoji {
-    margin-top: 8px;
-    margin-right: 20px;
-    width: 28px;
-    height: 32px;
-    font-size: 28px;
-    line-height: 32px;
+    margin-top: .5rem;
+    margin-right: 1.25rem;
+    width: 1.75rem;
+    height: 2rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
 }
 
 .process__text {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .process .page__row {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 
     @media (min-width: $w1024) {
-        margin-bottom: 56px;
+        margin-bottom: 3.5rem;
     }
 }
 

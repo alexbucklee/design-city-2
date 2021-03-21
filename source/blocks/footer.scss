@@ -1,25 +1,24 @@
 .footer {
-    padding-top: 32px;
-    padding-bottom: 24px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 
     background-color: #fff;
 
-    @media (min-width: $w768) {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .page__container {        
+        @media (min-width: $w768) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
 .footer__copyright {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     text-align: center;
 
-    font-size: 15px;
+    font-size: .9375rem;
 
     @media (min-width: $w768) {
         margin: 0;
@@ -31,7 +30,7 @@
     padding: 0;
 
     .social-links__item {
-        margin-right: 16px;
+        margin-right: 1rem;
 
         &:last-child {
             margin-right: 0;

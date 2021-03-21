@@ -1,18 +1,18 @@
 .button {    
     padding: 0;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 
     border: none;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: .875rem;
+    line-height: 1.5rem;
     color: #fff;
     background-color: transparent;
 
     display: inline-block;
-    border-radius: 26px;
+    border-radius: 1.625rem;
     text-decoration: none;
     font-weight: 500;
     background-color: $accent-color;

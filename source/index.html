@@ -18,7 +18,7 @@
         </div>
         <div class="start__col-1 page__container">
             <div class="start__logo-wrapper">
-                <img src="img/dest/images/logo.svg" width="155" height="32" alt="" class="start__logo">
+                <img src="img/dest/images/logo.svg" alt="" class="start__logo">
                 <p class="start__logo-text">
                     Проектирование и производство <br> корпусной мебели в Йошкар-Оле
                 </p>
@@ -405,7 +405,9 @@
         </section>
 
         <section class="contacts">
-            <hr class="page__hr page__container">
+            <div class="page__container">
+                <hr class="page__hr page__container">
+            </div>
             <div class="page__row page__container">
                 <h2 class="contacts__title page__section-title">Контакты</h2>
                 <p class="contacts__text">
@@ -443,33 +445,35 @@
     </main>
     <hr class="page__hr">
     <footer class="footer">
-        <p class="footer__copyright">© 2001-2021 Дизайн-сити</p>
-        <ul class="footer__social social-links">
-            <li class="social-links__item">
-                <a href="" class="social-links__link">
-                    <svg class="social-links__icon" width="48" height="48">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-vk"></use>
-                    </svg>
-                    <span class="visually-hidden">ВКонтакте</span>
-                </a>
-            </li>
-            <li class="social-links__item">
-                <a href="" class="social-links__link">
-                    <svg class="social-links__icon" width="48" height="48">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-whatsapp"></use>
-                    </svg>
-                    <span class="visually-hidden">Воцап</span>
-                </a>
-            </li>
-            <li class="social-links__item">
-                <a href="" class="social-links__link">
-                    <svg class="social-links__icon" width="48" height="48">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-telegram"></use>
-                    </svg>
-                    <span class="visually-hidden">Телеграм</span>
-                </a>
-            </li>
-        </ul>
+        <div class="page__container">
+            <p class="footer__copyright">© 2001-2021 Дизайн-сити</p>
+            <ul class="footer__social social-links">
+                <li class="social-links__item">
+                    <a href="" class="social-links__link">
+                        <svg class="social-links__icon" width="48" height="48">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a href="" class="social-links__link">
+                        <svg class="social-links__icon" width="48" height="48">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-whatsapp"></use>
+                        </svg>
+                        <span class="visually-hidden">Воцап</span>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a href="" class="social-links__link">
+                        <svg class="social-links__icon" width="48" height="48">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                        <span class="visually-hidden">Телеграм</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
