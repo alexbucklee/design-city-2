@@ -23,6 +23,11 @@
         display: block;
         overflow-x: auto;
     }
+
+    @media (min-width: $w1280) {
+        padding-left: 32px;
+        margin-left: -32px;
+    }
 }
 
 .categories-list__item {

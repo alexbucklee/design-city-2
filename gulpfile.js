@@ -38,6 +38,8 @@ function scripts() {
             'source/lib/modernizr-webp.js',
             'source/lib/photoswipe/photoswipe-ui-default.min.js',
             'source/lib/photoswipe/photoswipe.min.js',
+            'source/lib/inputmask.js',
+            'source/blocks/request-form.js',
             'source/blocks/portfolio.js',
             'source/blocks/categories-list.js'
         ])

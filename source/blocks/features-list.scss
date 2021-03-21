@@ -11,9 +11,9 @@
     }
 
     @media (min-width: $w1024) {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
-        grid-column-gap: normal;
+        // grid-column-gap: normal;
     }
 }
 
@@ -35,4 +35,8 @@
 
     fill: $accent-color;
     opacity: 0.75;
+
+    @media (min-width: $w1024) {
+        margin-right: 12px;
+    }
 }

@@ -10,14 +10,20 @@
 
 <body class="page__body">
     <h1 class="visually-hidden">Мебель на заказ в Йошкар-Оле — кухни, шкафы-купе, гостиные, офисная мебель.</h1>
+    <!-- <div class="page__start-margin"></div> -->
     <header class="start">
         <div class="start__image">
             <div class="start__image--sketch"></div>
             <div class="start__image--color"></div>
         </div>
         <div class="start__col-1 page__container">
-            <img src="img/dest/images/logo.svg" width="155" height="32" alt="" class="start__logo">
-            <p class="start__message-text">Корпусная мебель по вашим идеям</p>
+            <div class="start__logo-wrapper">
+                <img src="img/dest/images/logo.svg" width="155" height="32" alt="" class="start__logo">
+                <p class="start__logo-text">
+                    Проектирование и производство <br> корпусной мебели в Йошкар-Оле
+                </p>
+            </div>
+            <p class="start__message-text">Корпусная мебель <br> по вашим идеям</p>
             <p class="start__message-subtext">Создаем тщательно продуманную мебель <br class="page__br--tablet"> <br class="page__br--1024"> под
                 ваше пространство и бюджет.</p>
             <a href="" class="button">Смотреть работы</a>
@@ -26,7 +32,6 @@
                     href="tel:+78362458843">+7 (8362) 45-88-43</a></p>
         </div>
     </header>
-    <div class="page__start-margin"></div>
     <main class="page__main">
         <section class="portfolio">
             <div class="page__container">
@@ -138,9 +143,11 @@
                 </ul>
                 
                 <div class="swiper-container">
-                    <div class="portfolio__gallery-slider swiper-wrapper my-gallery">
-                        <div class="portfolio__gallery-grid swiper-slide">
-                            <figure class="portfolio__item portfolio__item--first">
+                    <div class="portfolio__gallery-slider swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="portfolio__gallery-grid my-gallery">
+                            <figure class="portfolio__item">
                                 <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-1.jpg"
                                     data-size="2000x1500">
                                     <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-1.jpg" alt="">
@@ -170,9 +177,6 @@
                                     <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-5.jpg" alt="">
                                 </a>
                             </figure>
-                        </div>
-        
-                        <div class="portfolio__gallery-grid swiper-slide">
                             <figure class="portfolio__item portfolio__item--first">
                                 <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
                                     data-size="2000x1500">
@@ -282,18 +286,18 @@
                         <use xlink:href="img/dest/images/sprite.svg#icon-mac"></use>
                     </svg>
                     <span>Бесплатная консультация <br> и дизайн-проект</span>
+                </li>                
+                <li class="features-list__item">
+                    <svg class="features-list__icon" width="40" height="40">
+                        <use xlink:href="img/dest/images/sprite.svg#icon-manufacture"></use>
+                    </svg>
+                    <span>Собственное <br> производство</span>
                 </li>
                 <li class="features-list__item">
                     <svg class="features-list__icon" width="40" height="40">
                         <use xlink:href="img/dest/images/sprite.svg#icon-delivery"></use>
                     </svg>
                     <span>Бесплатная доставка <br> и сборка мебели</span>
-                </li>
-                <li class="features-list__item">
-                    <svg class="features-list__icon" width="40" height="40">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-manufacture"></use>
-                    </svg>
-                    <span>Собственное <br> производство</span>
                 </li>
                 <li class="features-list__item">
                     <svg class="features-list__icon" width="40" height="40">
@@ -332,20 +336,20 @@
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">📐</span>
-                        <span>Проконсультируем и бесплатно <br class="page__br--tablet"> сделаем замер помещения.</span>
+                        <span>Проконсультируем и бесплатно <br class="page__br--tablet"> сделаем <br class="page__br--1024"> замер помещения.</span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">🖥️</span>
-                        <span>Разработаем дизайн-проект исходя <br class="page__br--tablet"> из ваших идей и предпочтений.</span>
+                        <span>Разработаем дизайн-проект исходя <br class="page__br--tablet"> из ваших идей <br class="page__br--1024"> и предпочтений.</span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">🛠️</span>
-                        <span>Заключаем договор с гарантированными сроками выполнения и стоимостью. Изготавливаем
+                        <span>Заключаем договор с гарантированными сроками <br class="page__br--1024"> выполнения и стоимостью. Изготавливаем
                             мебель.</span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">🚚</span>
-                        <span>Бесплатно доставим и установим мебель в удобное для Вас время. И уберем за собой мусор.</span>
+                        <span>Бесплатно доставим и установим мебель в удобное <br class="page__br--1024"> для Вас время. И уберем за собой мусор.</span>
                     </li>
                 </ul>
                 <div class="process__image"></div>
@@ -374,7 +378,7 @@
             <hr class="page__hr-2">
             <ul class="cta__social-links social-links">
                 <li class="social-links__item">
-                    <a href="" class="social-links__link">
+                    <a href="" class="social-links__link" title="Мы ВКонтакте">
                         <svg class="social-links__icon" width="48" height="48">
                             <use xlink:href="img/dest/images/sprite.svg#icon-vk"></use>
                         </svg>
@@ -382,7 +386,7 @@
                     </a>
                 </li>
                 <li class="social-links__item">
-                    <a href="" class="social-links__link">
+                    <a href="" class="social-links__link" title="Написать в WhatsApp">
                         <svg class="social-links__icon" width="48" height="48">
                             <use xlink:href="img/dest/images/sprite.svg#icon-whatsapp"></use>
                         </svg>
@@ -390,7 +394,7 @@
                     </a>
                 </li>
                 <li class="social-links__item">
-                    <a href="" class="social-links__link">
+                    <a href="" class="social-links__link" title="Связаться в Telegram">
                         <svg class="social-links__icon" width="48" height="48">
                             <use xlink:href="img/dest/images/sprite.svg#icon-telegram"></use>
                         </svg>

@@ -14,6 +14,10 @@
         padding-top: 104px;
         width: calc((100% - 16px * 11 - 48px) / 12 * 8 + 16px * 7);
     }
+
+    @media (min-width: $w1280) {
+        max-width: 600px;
+    }
 }
 
 .cta__message {

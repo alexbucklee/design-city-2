@@ -209,7 +209,7 @@ initPhotoSwipeFromDOM('.my-gallery');
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
-    spaceBetween: 24,
+    spaceBetween: 16,
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',

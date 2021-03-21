@@ -10,6 +10,10 @@
     @media (min-width: $w1024) {
         padding-bottom: 147px;
     }
+
+    @media (min-width: $w1280) {
+        padding-bottom: 163px;
+    }
 }
 
 .technologies__title {
@@ -65,6 +69,10 @@
 
     @media (min-width: $w768) {
         margin: 0;
+    }
+
+    @media (min-width: $w1280) {
+        padding-right: 128px;
     }
 }
 
@@ -135,6 +143,10 @@
 
     @media (min-width: $w1024) {
         margin-top: -56px;
+    }
+
+    @media (min-width: $w1280) {
+        margin-top: -39px;
     }
 }
 

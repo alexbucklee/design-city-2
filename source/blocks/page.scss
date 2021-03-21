@@ -20,10 +20,14 @@ img {
 
 .page__main {
     background-color: #fff;
+    
+    margin-top: 816px;
 }
 
 .page__start-margin {
     display: none;
+    position: relative;
+    z-index: -2;
 
     @media (min-width: $w768) {
         display: block;
@@ -50,6 +54,14 @@ img {
     @media (min-width: $w768) {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    @media (min-width: $w1280) {
+        max-width: 1232px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

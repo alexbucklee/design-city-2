@@ -8,6 +8,11 @@
             margin-left: 24px;
             margin-right: 24px;
         }
+
+        @media (min-width: $w1280) {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
     }
     @media (min-width: $w768) {
         padding-bottom: 48px;
@@ -31,6 +36,10 @@
 
     @media (min-width: $w1024) {
         margin: 0;
+    }
+
+    @media (min-width: $w1280) {
+        max-width: 560px;
     }
 }
 
@@ -98,6 +107,11 @@
                 padding: 0;
         }
     }
+
+    @media (min-width: $w1280) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .contacts .page__row {
@@ -105,5 +119,11 @@
         margin-bottom: 32px;
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    @media (min-width: $w1280) {
+        margin-bottom: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
