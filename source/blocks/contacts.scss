@@ -1,4 +1,14 @@
 .contacts {
+
+    & .page__hr {
+        margin-left: 16px;
+        margin-right: 16px;
+
+        @media (min-width: $w1024) {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
     @media (min-width: $w768) {
         padding-bottom: 48px;
     }

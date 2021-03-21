@@ -128,8 +128,8 @@ function cleanbuild() {
 };
 
 function smartwatch() {
-    gulp.watch('source/lib/*.js', scripts);    
-    gulp.watch('source/blocks/*.js', scripts);
+    gulp.watch('source/lib/**/*.js', scripts);    
+    gulp.watch('source/blocks/**/*.js', scripts);
     gulp.watch('source/sass/*.scss', styles);
     gulp.watch('source/blocks/*.scss', styles);
     gulp.watch('source/lib/*.scss', styles);
