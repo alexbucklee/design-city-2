@@ -30,21 +30,19 @@ function browsersync() {
 
 function scripts() {
     return gulp.src([
-            // 'source/js/swiper-bundle.min.js',
-            // 'source/js/photoswipe.min.js',
-            // 'source/js/photoswipe-ui-default.min.js',
-            // 'source/js/script.js',
-            'source/lib/swiper-bundle.min.js',
+            // 'source/lib/swiper-bundle.min.js',
             'source/lib/modernizr-webp.js',
+            'source/lib/aos/aos.js',
             'source/lib/photoswipe/photoswipe-ui-default.min.js',
             'source/lib/photoswipe/photoswipe.min.js',
             'source/lib/inputmask.js',
+            'source/blocks/page.js',
             'source/blocks/request-form.js',
             'source/blocks/portfolio.js',
             'source/blocks/categories-list.js'
         ])
         .pipe(concat('script.min.js'))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('source/js'))
         .pipe(sync.stream())
 }
@@ -133,8 +131,8 @@ function smartwatch() {
     gulp.watch('source/lib/**/*.js', scripts);    
     gulp.watch('source/blocks/**/*.js', scripts);
     gulp.watch('source/sass/*.scss', styles);
-    gulp.watch('source/blocks/*.scss', styles);
-    gulp.watch('source/lib/*.scss', styles);
+    gulp.watch('source/blocks/**/*.scss', styles);
+    gulp.watch('source/lib/**/*.scss', styles);
     gulp.watch('source/**/*.html').on('change', sync.reload);
     gulp.watch('source/img/src/**/*', gulp.series(images, createWebp));
 }

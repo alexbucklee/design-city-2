@@ -22,6 +22,8 @@
 
     color: $accent-color;
 
+    font-weight: 400;
+
     & span {
         opacity: 0.4;
     }
@@ -41,10 +43,10 @@
             position: absolute;
             z-index: -1;
 
-            background-color: rgba($color: #fff, $alpha: 0.4);
-            background: linear-gradient(180deg, #FFFFFF 25%, rgba(255, 255, 255, 0.4) 100%);
+            background-color: rgba($color: $bg-color, $alpha: 0.4);
+            background: linear-gradient(180deg, $bg-color 25%, rgba($bg-color, 0.4) 100%);
 
-            backdrop-filter: blur(2rem);
+            backdrop-filter: blur(24px);
         }
     }
 
@@ -58,9 +60,10 @@
     margin: 0;
     margin-bottom: 1.5rem;
 
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Prata", 'Times New Roman', Times, serif;
     font-size: 2rem;
     line-height: 2.25rem;
+    font-weight: 400;
 }
 
 .technologies__text {
@@ -146,7 +149,7 @@
     }
 
     @media (min-width: $w1280) {
-        margin-top: -2.4375rem;
+        margin-top: -2.5rem;
     }
 }
 
@@ -188,5 +191,5 @@
 
 .technologies__mask {
     z-index: 2;
-    background-color: #fff;
+    background-color: $bg-color;
 }

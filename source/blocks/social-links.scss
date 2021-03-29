@@ -10,42 +10,29 @@
     width: 3rem;
     height: 3rem;
 
+    color: $bg-color;
     fill: #000;
     opacity: 0.6;
 
-    transition: fill 0.2s, opacity 0.2s;
+    transition: color 0.2s, opacity 0.2s;
 }
 
 .social-links__link {
     display: block;
     font-size: 0;
     line-height: 0;
+
+    &:hover {
+        .social-links__icon {
+            opacity: 1;
+            color: rgba($color: $accent-color, $alpha: 0.15);
+        }
+    }
 }
 
 .social-links__item {
 
     margin-right: 1.5rem;
-
-    &:nth-child(1) {
-        .social-links__icon:hover {
-            fill: #2787F5;
-            opacity: 1;
-        }
-    }
-
-    &:nth-child(2) {
-        .social-links__icon:hover {
-            fill: #25D366;
-            opacity: 1;
-        }
-    }
-
-    &:nth-child(3) {
-        .social-links__icon:hover {
-            fill: #0088cc;
-            opacity: 1;
-        }
-    }
     
     &:last-child {
         margin-right: 0;

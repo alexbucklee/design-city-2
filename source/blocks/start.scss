@@ -40,9 +40,10 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Prata", 'Times New Roman', Times, serif;
     font-size: 9.38vw;
     line-height: 12.5vw;
+    font-weight: 400;
 
     @media (min-width: $w768) {
         margin: 0;
@@ -75,7 +76,8 @@
 
 .start__image {
     position: relative;
-    min-height: 25rem;
+    min-height: 23rem;
+    height: 64.789vh;
 
     @media (min-width: $w768) {
         position: absolute;
@@ -109,6 +111,7 @@
 
     @media (min-width: $w768) {
         background-image: url("../img/dest/images/start-image-sketch-768.webp");
+        background-position-x: 0;
 
         .no-webp & {
             background-image: url("../img/dest/images/start-image-sketch-768.png");
@@ -137,7 +140,7 @@
     }
 
     @media (min-width: $w768) {
-        background-position-x: 4.135625rem;
+        background-position-x: 0;
         background-image: url("../img/dest/images/start-image-color-768.webp");
 
         .no-webp & {
@@ -146,8 +149,9 @@
     }
 
     @media (min-width: $w1024) {
-        background-position-x: 0;
         background-image: url("../img/dest/images/start-image-color-1024.webp");
+        
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);  
 
         .no-webp & {
             background-image: url("../img/dest/images/start-image-color-1024.png");
@@ -215,7 +219,7 @@
     margin: 0;
     display: none;
 
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: .75rem;
     line-height: 1rem;
@@ -244,5 +248,18 @@
 
         display: flex;
         align-items: center;
+    }
+}
+
+.start__message-row-wrapper {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+@media (min-width: $w1024) {
+    .loaded .start-image-anim {
+        animation: 1s ease-out start-image-anim;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
     }
 }

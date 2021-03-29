@@ -14,211 +14,730 @@
     <header class="start">
         <div class="start__image">
             <div class="start__image--sketch"></div>
-            <div class="start__image--color"></div>
+            <div class="start__image--color start-image-anim"></div>
         </div>
         <div class="start__col-1 page__container">
             <div class="start__logo-wrapper">
                 <img src="img/dest/images/logo.svg" alt="" class="start__logo">
-                <p class="start__logo-text">
+                <p class="start__logo-text" data-aos="fade" data-aos-offset="-1000">
                     Проектирование и производство <br> корпусной мебели в Йошкар-Оле
                 </p>
             </div>
-            <p class="start__message-text">Корпусная мебель <br> по вашим идеям</p>
-            <p class="start__message-subtext">Создаем тщательно продуманную мебель <br class="page__br--tablet"> <br class="page__br--1024"> под
+            <p class="start__message-text">
+                <span class="start__message-row-wrapper">
+                    <span class="start__message-row" data-aos="slide-up" data-aos-offset="-1000">Корпусная мебель</span>
+                </span><br>
+                <span class="start__message-row-wrapper">
+                    <spann class="start__message-row" data-aos="slide-up" data-aos-delay="200" data-aos-offset="-1000">по вашим идеям</span>
+                </span>
+            </p>
+            <p class="start__message-subtext" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-1000">Создаем тщательно продуманную мебель <br class="page__br--tablet"> <br
+                    class="page__br--1024"> под
                 ваше пространство и бюджет.</p>
-            <a href="" class="button">Смотреть работы</a>
+            <a href="#portfolio" class="button" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-1000">Смотреть работы</a>
             <hr class="start__hr">
             <p class="start__address">Йошкар-Ола, Первомайская 100<br> <a class="contacts__link"
                     href="tel:+78362458843">+7 (8362) 45-88-43</a></p>
         </div>
     </header>
     <main class="page__main">
-        <section class="portfolio">
-            <div class="page__container">
+        <section id="portfolio" class="portfolio">
+            <div class="page__container" data-aos="fade-up">
                 <hr class="page__hr">
                 <div class="page__row">
                     <h2 class="portfolio__title page__section-title">Выполненные <br> проекты</h2>
-                    <p class="portfolio__text">Мы изготавливаем на заказ различные виды корпусной мебели на основе целей
-                        и индивидуальных предпочтений
-                        клиента.<br>
-                        Осуществили более 2000 проектов.</p>
+                    <p class="portfolio__text">Изготавливаем на заказ различные виды корпусной мебели на основе целей
+                        и индивидуальных предпочтений.</p>
                 </div>
                 <hr class="page__hr-2">
-                <div class="categories-list__scroll-hider portfolio__categories--mobile">
-                    <ul class="portfolio__categories categories-list">
-                        <li class="categories-list__item categories-list__item--current">
-                            <a class="categories-list__link" href="kitchens">Кухни</a>
-                        </li>
-                        <li class="categories-list__item">
-                            <a class="categories-list__link" href="cupboards">Шкафы-купе</a>
-                        </li>
-                        <li class="categories-list__item">Гостиные</li>
-                        <li class="categories-list__item">Гардеробные</li>
-                        <li class="categories-list__item">Офисная мебель</li>
-                        <li class="categories-list__item">Разное</li>
-                    </ul>
-                </div>
             </div>
 
-            <div class="portfolio__gallery portfolio__gallery--mobile">
-                <div id="kitchens" class="portfolio__category-gallery portfolio__gallery--enabled">
-                    <div class="portfolio__items-slider my-gallery">
-                        <figure class="portfolio__item portfolio__item--first">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-1.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-1.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-2.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-3.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-3.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-4.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-4.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-5.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-5.jpg" alt="">
-                            </a>
-                        </figure>
+            <div class="portfolio__gallery" data-aos="fade-up">
+                <div class="page__container">
+                    <div class="categories-list__scroll-hider">
+                        <ul class="portfolio__categories categories-list">
+                            <li class="categories-list__item categories-list__item--current">
+                                <a class="categories-list__link" href="kitchens">Кухни</a>
+                            </li>
+                            <li class="categories-list__item">
+                                <a class="categories-list__link" href="cupboards">Шкафы-купе</a>
+                            </li>
+                            <li class="categories-list__item">
+                                <a class="categories-list__link" href="living-room">Гостиные</a>
+                            </li>
+                            <li class="categories-list__item">
+                                <a class="categories-list__link" href="office">Офисная мебель</a>
+                            </li>
+                            <li class="categories-list__item">
+                                <a class="categories-list__link" href="other">Разное</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
 
-                <div id="cupboards" class="portfolio__category-gallery">
-                    <div class="portfolio__items-slider my-gallery">
-                        <figure class="portfolio__item portfolio__item--first">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-2.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-2.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-3.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-3.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-4.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-4.jpg" alt="">
-                            </a>
-                        </figure>
-                        <figure class="portfolio__item">
-                            <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-5.jpg"
-                                data-size="2000x1500">
-                                <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-5.jpg" alt="">
-                            </a>
-                        </figure>
+                    <div data-aos="fade-left" data-aos-delay="300" id="kitchens" class="portfolio__category-gallery portfolio__category-gallery--enabled">
+                        <div class="swiper-wrapper slideInRight">
+                            <div class="portfolio__items-slider portfolio__gallery-grid my-gallery">
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_kitchen-1.jpg" class="portfolio__item-link"
+                                        data-size="1954x1466">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-1@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-1@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-1@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-1.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-1@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-1.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-1.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-1.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_kitchen-2.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-2@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-2@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-2@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-2.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-2@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-2.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-2.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-2.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_kitchen-3.jpg" class="portfolio__item-link"
+                                        data-size="1918x1440">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-3@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-3@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-3.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-3@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-3.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-3.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-3.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_kitchen-4.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-4@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-4@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-4@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-4.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-4@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-4.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-4.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-4.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_kitchen-5.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-5@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-5@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-5@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-5.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_kitchen-5@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_kitchen-5.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-5.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-5.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-5@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="portfolio__gallery portfolio__gallery--desktop page__container">
-                <ul class="portfolio__categories categories-list portfolio__categories--desktop">
-                    <li class="categories-list__item categories-list__item--current">Кухни</li>
-                    <li class="categories-list__item">Шкафы-купе</li>
-                    <li class="categories-list__item">Гостиные</li>
-                    <li class="categories-list__item">Гардеробные</li>
-                    <li class="categories-list__item">Офисная мебель</li>
-                    <li class="categories-list__item">Разное</li>
-                </ul>
-                
-                <div class="swiper-container">
-                    <div class="portfolio__gallery-slider swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="portfolio__gallery-grid my-gallery">
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-1.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-1.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-2.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-3.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-3.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-4.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-4.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-5.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-5.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item portfolio__item--first">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-2.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-2.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-2.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-3.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-3.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-4.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-4.jpg" alt="">
-                                </a>
-                            </figure>
-                            <figure class="portfolio__item">
-                                <a class="portfolio__item-link" href="img/dest/files/portfolio_kitchen-5.jpg"
-                                    data-size="2000x1500">
-                                    <img class="portfolio__img" src="img/dest/files/portfolio_kitchen-5.jpg" alt="">
-                                </a>
-                            </figure>
+                    <div id="cupboards" class="portfolio__category-gallery">
+                        <div class="swiper-wrapper slideInRight">
+                            <div class="portfolio__items-slider portfolio__gallery-grid my-gallery">
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_cupboard-1.jpg" class="portfolio__item-link"
+                                        data-size="1125x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-1@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-1@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-1@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-1.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-1@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-1.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-1.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-1.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>С радиусными фасадами</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_cupboard-2.jpg" class="portfolio__item-link"
+                                        data-size="1500x2000">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-2@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-2@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-2@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-2.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-2@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-2.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-2.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-2.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Шкаф-купе для прихожей</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_cupboard-3.jpg" class="portfolio__item-link"
+                                        data-size="864x1152">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-3@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-3@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-3@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-3.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-3@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-3.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-3.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-3.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-3@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Шкаф-купе для детской</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_cupboard-4.jpg" class="portfolio__item-link"
+                                        data-size="2000x1124">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-4@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-4@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-4@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-4.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-4@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-4.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-4.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-4.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-4@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Встроенный шкаф-купе</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_cupboard-5.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-5@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-5@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-5@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-5.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_cupboard-5@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_cupboard-5.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-5.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-5.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-5@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Двусторонний шкаф-купе</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="living-room" class="portfolio__category-gallery">
+                        <div class="swiper-wrapper slideInRight">
+                            <div class="portfolio__items-slider portfolio__gallery-grid my-gallery">
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_living-1.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-1@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-1@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-1@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_living-1.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-1@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_living-1.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-1.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_living-1.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стенка с креплением на стену</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_living-2.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-2@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-2@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-2@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_living-2.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-2@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_living-2.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-2.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_living-2.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Гостиная, черный лакобель</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_living-3.jpg" class="portfolio__item-link"
+                                        data-size="1882x1506">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-3@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-3@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-3@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_living-3.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-3@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_living-3.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-3.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_living-3.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-3@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Мини-стенка для гостиной</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_living-4.jpg" class="portfolio__item-link"
+                                        data-size="2000x1334">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-4@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-4@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-4@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_living-4.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-4@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_living-4.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-4.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_living-4.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Гостиная в стиле минимализм</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_living-5.jpg" class="portfolio__item-link"
+                                        data-size="2000x1180">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-5@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-5@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-5@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_living-5.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_living-5@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_living-5.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-5.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_living-5.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стенка в минималистичном стиле</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="office" class="portfolio__category-gallery">
+                        <div class="swiper-wrapper slideInRight">
+                            <div class="portfolio__items-slider portfolio__gallery-grid my-gallery">
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_office-1.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-1@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-1@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-1@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_office-1.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-1@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_office-1.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-1.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_office-1.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стол для рабочего кабинета</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_office-2.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-2@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-2@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-2@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_office-2.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-2@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_office-2.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-2.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_office-2.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стол для переговоров</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_office-3.jpg" class="portfolio__item-link"
+                                        data-size="1684x1263">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-3@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-3@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-3@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_office-3.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-3@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_office-3.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-3.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_office-3.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-3@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Длинный стол для собраний</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_office-4.jpg" class="portfolio__item-link"
+                                        data-size="1776x1332">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-4@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-4@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-4@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_office-4.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-4@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_office-4.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-4.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_office-4.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стенка для офиса</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_office-5.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-5@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-5@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-5@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_office-5.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_office-5@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_office-5.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-5.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_office-5.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стойка-ресепшн</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="other" class="portfolio__category-gallery">
+                        <div class="swiper-wrapper slideInRight">
+                            <div class="portfolio__items-slider portfolio__gallery-grid my-gallery">
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_other-1.jpg" class="portfolio__item-link"
+                                        data-size="864x1152">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-1@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-1@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_other-1.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-1@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_other-1.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Настенная полка и стеллаж-перегородка в спальне</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_other-2.jpg" class="portfolio__item-link"
+                                        data-size="2000x1500">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-2@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-2@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-2@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_other-2.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-2@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_other-2.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-2.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_other-2.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стол для гримерной</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_other-3.jpg" class="portfolio__item-link"
+                                        data-size="864x1152">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-3@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-3@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-3@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_other-3.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-3@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_other-3.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-3.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_other-3.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-3@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стеллаж с ящиками в спальне</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_other-4.jpg" class="portfolio__item-link"
+                                        data-size="864x1152">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-4@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-4@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-4@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_other-4.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-4@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_other-4.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-4.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_other-4.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стеллаж с дверцами</figcaption>
+                                </figure>
+                                <figure class="portfolio__item">
+                                    <a href="img/dest/files/portfolio_other-5.jpg" class="portfolio__item-link"
+                                        data-size="1500x2000">
+                                        <picture>
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-5@2x.webp"
+                                                type="image/webp">
+                                            <source media="(min-width: 1440px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-5@2x.jpg">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-5@2x.webp 2x, img/dest/files/thumbnails/desktop/portfolio_other-5.webp 1x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1024px)"
+                                                srcset="img/dest/files/thumbnails/desktop/portfolio_other-5@2x.jpg 2x, img/dest/files/thumbnails/desktop/portfolio_other-5.jpg 1x">
+                                            <source
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-5.webp 1x"
+                                                type="image/webp">
+                                            <img src="img/dest/files/thumbnails/mobile/portfolio_other-5.jpg"
+                                                alt="Кухня в классическом стиле" class="portfolio__img"
+                                                srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.jpg 2x">
+                                        </picture>
+                                    </a>
+                                    <figcaption>Стол для рукоделия</figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <div class="portfolio__more-photos page__container">
+                <p class="portfolio__more-photos-text">Больше фотографий в нашей группе ВКонтакте</p>
+                <a class="button portfolio__more-photos-button" href="" target="_blank"
+                    title="Перейти в группу ВКонтакте">Перейти в группу
+                    <svg class="portfolio__more-photos-icon" xmlns="http://www.w3.org/2000/svg" height="1rem"
+                        viewBox="0 0 24 24" width="1rem" fill="currentColor">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- <div class="swiper-navigation">
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-pagination swiper-pagination-bullets"></div>
+                <div class="swiper-button swiper-button-next"></div>
+            </div> -->
+
         </section>
 
         <section class="technologies page__container">
             <div class="technologies__wrapper">
                 <h2 class="technologies__title page__section-title">
                     <span>
-                        Используем <br class="page__br--tablet"> <br class="page__br--1024"> проверенные <br class="page__br--tablet"> решения —
+                        Используем <br class="page__br--tablet"> <br class="page__br--1024"> проверенные <br
+                            class="page__br--tablet"> решения —
                     </span>
                 </h2>
                 <div class="technologies__item">
@@ -227,7 +746,7 @@
                         <p class="technologies__text">Для удобства и эстетичности устанавливаем подсветку рабочей зоны и
                             стеклянных полок.</p>
                     </div>
-                    <div class="technologies__image technologies__image--light"></div>
+                    <div class="technologies__image technologies__image--light" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
                 <div class="technologies__item">
                     <div class="technologies__col-1">
@@ -236,7 +755,7 @@
                             искусственный
                             камень, <br class="page__br--tablet"> ДСП под пластиком.</p>
                     </div>
-                    <div class="technologies__image technologies__image--table"></div>
+                    <div class="technologies__image technologies__image--table" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
                 <div class="technologies__item">
                     <div class="technologies__col-1">
@@ -244,7 +763,7 @@
                         <p class="technologies__text">Различные материалы фасадов: ЛДСП, МДФ, пластик, классические под
                             дерево, пленочные, натуральное дерево.</p>
                     </div>
-                    <div class="technologies__image technologies__image--facades"></div>
+                    <div class="technologies__image technologies__image--facades" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
                 <div class="technologies__item">
                     <div class="technologies__col-1">
@@ -253,128 +772,329 @@
                             типами
                             открывания.</p>
                     </div>
-                    <div class="technologies__image technologies__image--furniture"></div>
+                    <div class="technologies__image technologies__image--furniture" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
                 <div class="technologies__item">
                     <div class="technologies__col-1 technologies__mask">
                         <h3 class="technologies__subtitle">Сопутствующая техника</h3>
                         <p class="technologies__text">Бытовая техника со скидками от надежных производителей.</p>
                     </div>
-                    <div class="technologies__image technologies__image--appliances"></div>
+                    <div class="technologies__image technologies__image--appliances" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
             </div>
             <div class="technologies__request">
                 <b class="technologies__subtitle">Помочь выбрать?</b>
-                <p class="technologies__request-text">Оставьте заявку, и вместе с вами мы подберем <br class="page__br--tablet"> <br class="page__br--1024"> материалы под ваш вкус и бюджет.</p>
-                <button class="button technologies__request-button">Оставить заявку</button>
+                <p class="technologies__request-text">Оставьте заявку, и вместе с вами мы подберем <br
+                        class="page__br--tablet"> <br class="page__br--1024"> материалы под ваш вкус и бюджет.</p>
+                <a href="#request" class="button technologies__request-button">Оставить заявку</a>
             </div>
         </section>
 
-        <section class="about page__container">
-            <hr class="page__hr">
-            <div class="page__row">
-                <h2 class="about__title page__section-title">О студии <br> Дизайн-сити</h2>
-                <div class="about__text-wrapper">
-                    <p class="about__text">Разрабатываем и реализуем индивидуальные проекты мебели с 2001 года. При проектировании мы прорабатываем дизайн, конструктив изделий, эргономику, подбираем материалы и фурнитуру.</p>
-                    <p class="about__text">Все, что мы делаем, строится вокруг вас, ваших потребностей и вашего бюджета.</p>
+        <section class="about">
+            <div class="page__container">
+                <hr class="page__hr">
+                <div class="page__row">
+                    <h2 class="about__title page__section-title">О студии <br> Дизайн-сити</h2>
+                    <div class="about__text-wrapper">
+                        <p class="about__text">Разрабатываем и реализуем индивидуальные проекты мебели с 2001 года.
+                            При проектировании мы прорабатываем дизайн, конструктив изделий, эргономику, подбираем
+                            материалы
+                            и фурнитуру.</p>
+                        <p class="about__text">Все, что мы делаем, строится вокруг вас, ваших потребностей и вашего
+                            бюджета.
+                        </p>
+                    </div>
                 </div>
+                <hr class="page__hr-2">
+                <ul class="features-list">
+                    <li class="features-list__item">
+                        <svg class="features-list__icon" width="40" height="40">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-mac"></use>
+                        </svg>
+                        <span>Бесплатная консультация <br> и дизайн-проект</span>
+                    </li>
+                    <li class="features-list__item">
+                        <svg class="features-list__icon" width="40" height="40">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-manufacture"></use>
+                        </svg>
+                        <span>Собственное <br> производство</span>
+                    </li>
+                    <li class="features-list__item">
+                        <svg class="features-list__icon" width="40" height="40">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-delivery"></use>
+                        </svg>
+                        <span>Бесплатная доставка <br> и сборка мебели</span>
+                    </li>
+                    <li class="features-list__item">
+                        <svg class="features-list__icon" width="40" height="40">
+                            <use xlink:href="img/dest/images/sprite.svg#icon-guarantee"></use>
+                        </svg>
+                        <span>Гарантия на всю мебель <br> 18 месяцев</span>
+                    </li>
+                </ul>
+
+                <b class="about__amount">Более 2000 выполненных проектов</b>
+
             </div>
-            <hr class="page__hr-2">
-            <ul class="features-list">
-                <li class="features-list__item">
-                    <svg class="features-list__icon" width="40" height="40">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-mac"></use>
-                    </svg>
-                    <span>Бесплатная консультация <br> и дизайн-проект</span>
-                </li>                
-                <li class="features-list__item">
-                    <svg class="features-list__icon" width="40" height="40">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-manufacture"></use>
-                    </svg>
-                    <span>Собственное <br> производство</span>
-                </li>
-                <li class="features-list__item">
-                    <svg class="features-list__icon" width="40" height="40">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-delivery"></use>
-                    </svg>
-                    <span>Бесплатная доставка <br> и сборка мебели</span>
-                </li>
-                <li class="features-list__item">
-                    <svg class="features-list__icon" width="40" height="40">
-                        <use xlink:href="img/dest/images/sprite.svg#icon-guarantee"></use>
-                    </svg>
-                    <span>Гарантия на всю мебель <br> 18 месяцев</span>
-                </li>
-            </ul>
+            <div class="about__amount-slider">
 
-            <b class="about__amount">Более 2000 выполненных проектов</b>
-            <div class="about__amount-map">
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-1.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-1.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-1.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-1.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-1.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-1.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-1.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-1.jpg"
+                        alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-2.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-2.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-2.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-2.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-2.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-2.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-2.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-2.jpg"
+                        alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-2.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-2.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-3.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-3.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-3@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-3.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-3.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-3@2x.jpg 2x">
+                </picture>
 
+                <div></div>
+                <div></div>
+
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-3.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-3.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-4.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-4.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-4.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-4.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-4.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-4.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-5.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-5.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-5.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-5.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-5.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-5.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-5.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-5.jpg"
+                        alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-5@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-4.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-4.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-5.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-5.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-5@2x.jpg 2x">
+                </picture>
+                <picture class="about__amount-image">
+                    <source
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-3.webp 1x"
+                        type="image/webp">
+                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-3.jpg" alt="Кухня в классическом стиле"
+                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
+                </picture>
             </div>
         </section>
 
         <section class="process page__container">
             <hr class="page__hr">
-            <div class="page__row">
+            <div class="page__row" data-aos="fade-up">
                 <h2 class="process__title page__section-title">Как мы <br> работаем</h2>
                 <div class="process__text-wrapper">
                     <p class="process__text">
-                        Мы предоставляем полный набор услуг — от консультации дизайнера и разработки дизайн-проекта до доставки
+                        Мы предоставляем полный набор услуг — от консультации дизайнера и разработки дизайн-проекта
+                        до доставки
                         и сборки готовой мебели в вашем доме.
                     </p>
                     <p class="process__text">
-                        За счет собственного производства мы строго придерживаемся согласованных сроков выполнения заказа.
+                        За счет собственного производства мы строго придерживаемся согласованных сроков выполнения
+                        заказа.
                     </p>
                 </div>
             </div>
 
             <div class="page__row">
-                <ul class="process__steps-list">
+                <ul class="process__steps-list" data-aos="fade-up">
                     <li class="process__steps-item">
                         <span class="process__emoji">📝</span>
-                        <span>Оставьте заявку удобным для вас способом. <br class="page__br--1024"> Оставить заявку.</span>
+                        <span>Оставьте заявку удобным для вас способом. <br class="page__br--1024"> <a href="#request">Оставить
+                            заявку.</a></span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">📐</span>
-                        <span>Проконсультируем и бесплатно <br class="page__br--tablet"> сделаем <br class="page__br--1024"> замер помещения.</span>
+                        <span>Проконсультируем и бесплатно <br class="page__br--tablet"> сделаем <br
+                                class="page__br--1024"> замер помещения.</span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">🖥️</span>
-                        <span>Разработаем дизайн-проект исходя <br class="page__br--tablet"> из ваших идей <br class="page__br--1024"> и предпочтений.</span>
+                        <span>Разработаем дизайн-проект исходя <br class="page__br--tablet"> из ваших идей <br
+                                class="page__br--1024"> и предпочтений.</span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">🛠️</span>
-                        <span>Заключаем договор с гарантированными сроками <br class="page__br--1024"> выполнения и стоимостью. Изготавливаем
+                        <span>Заключаем договор с гарантированными сроками <br class="page__br--1024"> выполнения и
+                            стоимостью. Изготавливаем
                             мебель.</span>
                     </li>
                     <li class="process__steps-item">
                         <span class="process__emoji">🚚</span>
-                        <span>Бесплатно доставим и установим мебель в удобное <br class="page__br--1024"> для Вас время. И уберем за собой мусор.</span>
+                        <span>Бесплатно доставим и установим мебель в удобное <br class="page__br--1024"> для Вас время.
+                            И уберем за собой мусор.</span>
                     </li>
                 </ul>
-                <div class="process__image"></div>
+                <div class="process__image" data-aos="fade-up" data-aos-delay="200"></div>
             </div>
         </section>
 
-        <section class="cta page__container">
+        <section id="request" class="cta page__container">
             <h2 class="visually-hidden">Оставить заявку на изготовление мебели</h2>
-            <b class="cta__message">Создайте <br class="page__br--mobile"> уникальный интерьер <br class="page__br--1024"> вместе с нами</b>
-            <p class="cta__text">Оставьте заявку и мы позвоним вам, или напишем в мессенджере, <br class="page__br--tablet page__br--1024"> для консультации по всем
-                интересующим вопросам.</p>
-            <form class="cta__form request-form" action="">
-                <div class="request-form__input-wrapper">
-                    <label for="name" class="visually-hidden">Ваше имя</label>
-                    <input class="request-form__input request-form__input--name" id="name" type="text" placeholder="Ваше имя">
-                    <label for="phone-number" class="visually-hidden">Ваш номер телефона</label>
-                    <input class="request-form__input" id="phone-number" type="tel" placeholder="Номер телефона">
+            <div class="cta__form-wrapper">
+                <b class="cta__message">Создайте <br class="page__br--mobile"> уникальный интерьер <br
+                        class="page__br--1024"> вместе с нами</b>
+                <p class="cta__text">Оставьте заявку и мы позвоним вам, или напишем в мессенджере, <br
+                        class="page__br--tablet page__br--1024"> для консультации по всем
+                    интересующим вопросам.</p>
+                <form class="cta__form request-form" action="">
+                    <div class="request-form__input-wrapper">
+                        <label for="name" class="visually-hidden">Ваше имя</label>
+                        <input class="request-form__input request-form__input--name" id="name" type="text"
+                            placeholder="Ваше имя">
+                        <label for="phone-number" class="visually-hidden">Ваш номер телефона</label>
+                        <input class="request-form__input" id="phone-number" type="tel" placeholder="Номер телефона">
+                    </div>
+                    <div class="request-form__input-wrapper">
+                        <label class="request-form__checkbox" for="messenger">
+                            <input id="messenger" type="checkbox"> Напишите в мессенджере
+                        </label>
+                        <button class="request-form__button button" type="submit">Отправить</button>
+                    </div>
+                </form>
+
+                <div class="cta__form-done">
+                    <b class="cta__message">Спасибо за заявку!</b>
+                    <p class="cta__text">Мы свяжемся с вами и ответим на все возникшие вопросы.</p>
                 </div>
-                <div class="request-form__input-wrapper">
-                    <label class="request-form__checkbox" for="messenger">
-                        <input id="messenger" type="checkbox"> Напишите в мессенджере
-                    </label>
-                    <button class="request-form__button button" type="submit">Отправить</button>
-                </div>
-            </form>
+            </div>
             <hr class="page__hr-2">
             <ul class="cta__social-links social-links">
                 <li class="social-links__item">
@@ -439,7 +1159,9 @@
                         </dd>
                     </div>
                 </dl>
-                <div class="contacts__map"></div>
+                <div class="contacts__map">
+                    <iframe tabindex="-1" src="https://yandex.ru/map-widget/v1/?um=constructor%3A19de43c8666d69edc9d0aac65d6716b49b455802513d90c1a3251165ed2170d9&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -543,6 +1265,11 @@
 
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('loaded');
+    });
+    </script>
     <script src="js/script.min.js"></script>
 </body>
 

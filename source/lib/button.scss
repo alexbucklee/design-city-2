@@ -2,25 +2,30 @@
     padding: 0;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: .8125rem;
+    padding-bottom: .6875rem;
 
     border: none;
-    font-size: .875rem;
-    line-height: 1.5rem;
-    color: #fff;
     background-color: transparent;
 
-    display: inline-block;
-    border-radius: 1.625rem;
-    text-decoration: none;
-    font-weight: 500;
-    background-color: $accent-color;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: .6875rem;
+    line-height: 1.5rem;
 
-    transition: 0.2s ease-out;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: #F4F6F4;
+
+    display: inline-block;
+    border-radius: .5rem;
+    text-decoration: none;
+    background-color: $dark-green;
+
+    transition: background-color 0.2s ease-out;
 
     &:hover {
         background: $hover-color;
-        color: $black85;
     }
 }

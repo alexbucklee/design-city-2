@@ -6,7 +6,7 @@
     }
 
     @media (min-width: $w768) {
-        padding-bottom: 8.4375rem;
+        padding-bottom: 12rem;
     }
 }
 
@@ -38,6 +38,10 @@
 .about__text {
     margin: 0;
     margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .about__text-wrapper {
@@ -67,30 +71,44 @@
     margin-top: 5rem;
     margin-bottom: 1.75rem;
 
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Prata", 'Times New Roman', Times, serif;
     font-size: 2rem;
     line-height: 2.25rem;
+    font-weight: 400;
 
     @media (min-width: $w768) {
         margin-top: 6.1875rem;
-        margin-bottom: 2.25rem;
+        margin-bottom: 3.75rem;
         text-align: center;
     }
 
     @media (min-width: $w1024) {
-        margin-top: 9.75rem;
+        margin-top: 12rem;
     }
 }
 
-.about__amount-map {
-    min-height: 25rem;
+.about__amount-slider {
+    display: grid;
+    grid-template-columns: repeat(25, 5.5rem);
+    grid-template-rows: repeat(2, 8rem);
+    grid-gap: 1rem;
+
+    overflow: hidden;
+}
+
+.about__amount-image {
+    display: flex;
     background-color: #c4c4c4;
+    height: 8rem;
+    opacity: 0.6;
+    border-radius: 1rem;
 
-    @media (min-width: $w768) {
-        min-height: 40rem;
-    }
+    grid-column: span 2;
 
-    @media (min-width: $w1024) {
-        min-height: 41rem;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
     }
 }
