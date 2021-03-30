@@ -88,12 +88,15 @@
 }
 
 .about__amount-slider {
-    display: grid;
-    grid-template-columns: repeat(25, 5.5rem);
-    grid-template-rows: repeat(2, 8rem);
-    grid-gap: 1rem;
+    display: none;
+    @media (min-width: $w768) {
+        display: grid;
+        grid-template-columns: repeat(25, 5.5rem);
+        grid-template-rows: repeat(2, 8rem);
+        grid-gap: 1rem;
 
-    overflow: hidden;
+        overflow: hidden;
+    }
 }
 
 .about__amount-image {
