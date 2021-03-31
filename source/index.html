@@ -9,20 +9,39 @@
 </head>
 
 <body class="page__body">
+    <div class="page__overlay"></div>
     <h1 class="visually-hidden">Мебель на заказ в Йошкар-Оле — кухни, шкафы-купе, гостиные, офисная мебель.</h1>
-    <!-- <div class="page__start-margin"></div> -->
-    <header class="start">
+    <header class="start__nav">
+        <div class="main-nav">
+            <div class="main-nav__row" data-aos="fade">
+                <a href="#start">
+                    <img src="img/dest/images/logo.svg" alt="" class="main-nav__logo">
+                </a>
+                <button class="main-nav__button">
+                    <svg class="main-nav__icon main-nav__icon--open" width="48" height="48">
+                        <use xlink:href="img/dest/images/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <svg class="main-nav__icon main-nav__icon--close" width="48" height="48" display="none">
+                        <use xlink:href="img/dest/images/sprite.svg#icon-close"></use>
+                    </svg>
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </div>
+            <ul class="main-nav__list main-nav__list--closed" data-aos="fade">
+                <li class="main-nav__item"><a href="#portfolio" class="main-nav__link scroll">Наши работы</a></li>
+                <li class="main-nav__item"><a href="#about" class="main-nav__link scroll">О нас</a></li>
+                <li class="main-nav__item"><a href="#process" class="main-nav__link scroll">Как заказать</a></li>
+                <li class="main-nav__item"><a href="#contacts" class="main-nav__link scroll">Контакты</a></li>
+            </ul>            
+            <div class="main-nav__div"></div>  
+        </div>
+    </header>
+    <header class="start" id="start">
         <div class="start__image">
-            <div class="start__image--sketch"></div>
+            <div class="start__image--sketch" data-aos="fade"></div>
             <div class="start__image--color start-image-anim"></div>
         </div>
         <div class="start__col-1 page__container">
-            <div class="start__logo-wrapper">
-                <img src="img/dest/images/logo.svg" alt="" class="start__logo">
-                <p class="start__logo-text" data-aos="fade" data-aos-offset="-1000">
-                    Проектирование и производство <br> корпусной мебели в Йошкар-Оле
-                </p>
-            </div>
             <p class="start__message-text">
                 <span class="start__message-row-wrapper">
                     <span class="start__message-row" data-aos="slide-up" data-aos-offset="-1000">Корпусная мебель</span>
@@ -714,11 +733,9 @@
             <div class="portfolio__more-photos page__container">
                 <a class="button portfolio__more-photos-button" href="" target="_blank"
                     title="Перейти в группу ВКонтакте">Перейти в группу ВК
-                    <svg class="portfolio__more-photos-icon" xmlns="http://www.w3.org/2000/svg" height="1rem"
-                        viewBox="0 0 24 24" width="1rem" fill="currentColor">
-                        <path d="M0 0h24v24H0V0z" fill="none" />
-                        <path
-                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                    <svg class="portfolio__more-photos-icon" width="1rem" height="1rem" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7865 12.3932H1.60673V3.21342H6.73221V1.60669H0V14H12.3933V7.26775H10.7865V12.3932Z"/>
+                        <path d="M8.64359 0V1.60673H11.2572L3.87695 8.98699L5.01238 10.1224L12.3926 2.74216V5.35578H13.9994V0H8.64359Z"/>
                     </svg>
                 </a>
                 <p class="portfolio__more-photos-text">Чтобы увидеть больше фотографий.</p>
@@ -790,7 +807,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="page__container">
                 <hr class="page__hr">
                 <div class="page__row">
@@ -1016,7 +1033,7 @@
             </div>
         </section>
 
-        <section class="process page__container">
+        <section class="process page__container" id="process">
             <hr class="page__hr">
             <div class="page__row" data-aos="fade-up">
                 <h2 class="process__title page__section-title">Как мы <br> работаем</h2>
@@ -1124,7 +1141,7 @@
             </ul>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="page__container">
                 <hr class="page__hr page__container">
             </div>

@@ -30,16 +30,8 @@ function browsersync() {
 
 function scripts() {
     return gulp.src([
-            // 'source/lib/swiper-bundle.min.js',
-            'source/lib/modernizr-webp.js',
-            'source/lib/aos/aos.js',
-            'source/lib/photoswipe/photoswipe-ui-default.min.js',
-            'source/lib/photoswipe/photoswipe.min.js',
-            'source/lib/inputmask.js',
-            'source/blocks/page.js',
-            'source/blocks/request-form.js',
-            'source/blocks/portfolio.js',
-            'source/blocks/categories-list.js'
+            'source/lib/**/*.js',
+            'source/blocks/**/*.js'
         ])
         .pipe(concat('script.min.js'))
         .pipe(uglify())
