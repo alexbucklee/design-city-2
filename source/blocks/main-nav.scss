@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: space-between;
 
-        transition: 0.2s ease-out;
+        transition: 0.3s ease-out;
     }
 
     @media (min-width: $w1280) {
@@ -47,9 +47,8 @@
 }
 
 .main-nav__logo {
-    height: 2rem;
-    width: 9.6875rem;
-    opacity: 0.85;
+    height: 3rem;
+    width: 10rem;
 }
 
 .main-nav__button {
@@ -86,7 +85,6 @@
         height: 100vh;
 
         border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
-        background-color: rgba($color: $bg-color, $alpha: 0.8);
         backdrop-filter: blur(24px);
         transform: translateX(0);
 
@@ -109,7 +107,7 @@
     }
 
     @media (min-width: $w1280) {
-        width: calc((100vw - 1rem * 11 - 2rem * 2) / 12 * 5 + 1rem * 4);
+        width: 30.5rem;
     }
 }
 
@@ -119,12 +117,12 @@
 
     display: block;
 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "SourceCodePro", Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: .75rem;
+    font-size: .8125rem;
     line-height: 3rem;
 
-    letter-spacing: 0.16em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -136,9 +134,8 @@
         padding-top: .75rem;
         padding-bottom: .75rem;
         line-height: 1.5rem;
-        transform: translateY(1px);
 
-        opacity: 0.75;
+        opacity: 0.6;
 
         transition: opacity 0.2s ease-out;
 
@@ -153,11 +150,32 @@
     opacity: 0.9;
 }
 
-.main-nav__div {
+.main-nav__button-request-wrapper {
     display: none;
     @media (min-width: $w1024) {
-        display: block;
-        height: 32px;
-        width: 155px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        width: 10rem;
+    }
+}
+
+.main-nav__button-request {
+    display: none;
+    @media (min-width: $w1024) {
+        display: flex;
+        position: absolute;
+        right: 0;
+        white-space: nowrap;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: .6875rem;
+        opacity: 0.8;
+        box-sizing: border-box;
+
+        transition: 0.3s ease-out, opacity 0.2s ease-out;
     }
 }

@@ -19,12 +19,12 @@
 
     &::after {
         content: "";
-        height: 4rem;
+        height: 4.5rem;
         position: absolute;
         bottom: -4.5rem;
         left: 0;
         right: -1rem;
-        max-width: 21rem;
+        max-width: 20.25rem;
         background-image: url("../img/dest/images/since2001.svg");
         background-size: cover;
     }
@@ -54,7 +54,7 @@
 
     @media (min-width: $w768) {
         margin-top: .4375rem;
-        margin-bottom: 3rem;
+        margin-bottom: 3.25rem;
     }
 
     @media (min-width: $w1024) {
@@ -71,7 +71,7 @@
     margin-top: 5rem;
     margin-bottom: 1.75rem;
 
-    font-family: "Prata", 'Times New Roman', Times, serif;
+    font-family: "SourceSerifPro", 'Times New Roman', Times, serif;
     font-size: 2rem;
     line-height: 2.25rem;
     font-weight: 400;
@@ -83,19 +83,17 @@
     }
 
     @media (min-width: $w1024) {
-        margin-top: 12rem;
+        margin-top: 12.25rem;
     }
 }
 
 .about__amount-slider {
     display: none;
     @media (min-width: $w768) {
-        display: grid;
-        grid-template-columns: repeat(25, 5.5rem);
+          display: grid;
+        grid-template-columns: repeat(19, 5.5rem);
         grid-template-rows: repeat(2, 8rem);
         grid-gap: 1rem;
-
-        overflow: hidden;
     }
 }
 
@@ -103,7 +101,7 @@
     display: flex;
     background-color: #c4c4c4;
     height: 8rem;
-    opacity: 0.6;
+    opacity: 0.75;
     border-radius: 1rem;
 
     grid-column: span 2;
@@ -114,4 +112,8 @@
         object-fit: cover;
         border-radius: 1rem;
     }
+}
+
+.about__amount-slider-wrapper {
+    overflow: hidden;
 }

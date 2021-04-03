@@ -18,9 +18,7 @@ const svgstore = require('gulp-svgstore');
 
 function browsersync() {
     sync.init({
-        server: {
-            baseDir: 'source/'
-        },
+        proxy: 'design-city-2/source/',
         notify: false,
         online: true
     })
@@ -91,6 +89,9 @@ function cleanimg() {
 
 function sprite() {
     return gulp.src("source/img/src/**/icon-*.svg")
+        .pipe(imagemin([
+            imagemin.svgo()
+        ]))
         .pipe(svgstore())
         .pipe(rename("sprite.svg"))
         .pipe(gulp.dest("source/img/dest/images/"))
@@ -106,6 +107,7 @@ function buildcopy() {
             'source/img/dest/**/*',
             'source/*.ico',
             'source/**/*.html',
+            'source/**/*.php',
         ], {
             base: 'source'
         })

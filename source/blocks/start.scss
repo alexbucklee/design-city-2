@@ -71,7 +71,7 @@
     }
 
     @media (min-width: $w1024) {
-        margin-bottom: 4.5rem;
+        margin-bottom: 3.5rem;
     }
 }
 
@@ -176,18 +176,12 @@
     }
 
     @media (min-width: $w1024) {
-        margin-top: 4.9375rem;
-    }
-
-    @media (min-width: $w1280) {
-        margin-top: 4.9375rem;
+        margin-top: 6rem;
     }
 }
 
 .start__address {
     margin: 0;
-
-    font-size: .875rem;
 
     @media (min-width: $w768) {
         margin-bottom: 0;
@@ -202,7 +196,7 @@
     left: 0;
     right: 0;
 
-    &--bg {        
+    &--bg {
         background-color: rgba($color: $bg-color, $alpha: 0.8);
         backdrop-filter: blur(24px);
     }

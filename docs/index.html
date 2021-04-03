@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мебель на заказ в Йошкар-Оле — Дизайн-Сити</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
 <body class="page__body">
     <div class="page__overlay"></div>
     <h1 class="visually-hidden">Мебель на заказ в Йошкар-Оле — кухни, шкафы-купе, гостиные, офисная мебель.</h1>
-    <header class="start__nav">
+    <header class="start__nav" data-aos="fade">
         <div class="main-nav">
-            <div class="main-nav__row" data-aos="fade">
+            <div class="main-nav__row">
                 <a href="#start">
                     <img src="img/dest/images/logo.svg" alt="" class="main-nav__logo">
                 </a>
@@ -27,13 +31,15 @@
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
             </div>
-            <ul class="main-nav__list main-nav__list--closed" data-aos="fade">
+            <ul class="main-nav__list main-nav__list--closed">
                 <li class="main-nav__item"><a href="#portfolio" class="main-nav__link scroll">Наши работы</a></li>
                 <li class="main-nav__item"><a href="#about" class="main-nav__link scroll">О нас</a></li>
                 <li class="main-nav__item"><a href="#process" class="main-nav__link scroll">Как заказать</a></li>
                 <li class="main-nav__item"><a href="#contacts" class="main-nav__link scroll">Контакты</a></li>
             </ul>            
-            <div class="main-nav__div"></div>  
+            <div class="main-nav__button-request-wrapper">
+                <a href="#request" class="button main-nav__button-request" style="transform: translateY(100%); visibility: hidden; opacity: 0">Оставить заявку</a>
+            </div>  
         </div>
     </header>
     <header class="start" id="start">
@@ -53,9 +59,11 @@
             <p class="start__message-subtext" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-1000">Создаем тщательно продуманную мебель <br class="page__br--tablet"> <br
                     class="page__br--1024"> под
                 ваше пространство и бюджет.</p>
-            <a href="#portfolio" class="button" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-1000">Смотреть работы</a>
-            <hr class="start__hr">
-            <p class="start__address">Йошкар-Ола, Первомайская 100<br> <a class="contacts__link"
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-offset="-1000">
+                <a href="#portfolio" class="button">Смотреть работы</a>
+            </div>
+            <hr class="start__hr" data-aos="fade-up" data-aos-delay="800" data-aos-offset="-1000">
+            <p class="start__address" data-aos="fade-up" data-aos-delay="800" data-aos-offset="-1000">Йошкар-Ола, Первомайская 100<br> <a class="contacts__link"
                     href="tel:+78362458843">+7 (8362) 45-88-43</a></p>
         </div>
     </header>
@@ -65,8 +73,7 @@
                 <hr class="page__hr">
                 <div class="page__row">
                     <h2 class="portfolio__title page__section-title">Выполненные <br> проекты</h2>
-                    <p class="portfolio__text">Изготавливаем на заказ различные виды корпусной мебели на основе целей
-                        и индивидуальных предпочтений.</p>
+                    <p class="portfolio__text">Изготавливаем на заказ различные виды корпусной мебели на основе планировки помещения и индивидуальных предпочтений. Осуществили более ??? проектов.</p>
                 </div>
                 <hr class="page__hr-2">
             </div>
@@ -118,7 +125,7 @@
                                                 srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.jpg 2x">
                                         </picture>
                                     </a>
-                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                    <figcaption>Фасады — крашеный МДФ с фрезеровкой</figcaption>
                                 </figure>
                                 <figure class="portfolio__item">
                                     <a href="img/dest/files/portfolio_kitchen-2.jpg" class="portfolio__item-link"
@@ -142,7 +149,7 @@
                                                 srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.jpg 2x">
                                         </picture>
                                     </a>
-                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                    <figcaption>Фасады — венге матовое + ваниль глянец МДФ краска</figcaption>
                                 </figure>
                                 <figure class="portfolio__item">
                                     <a href="img/dest/files/portfolio_kitchen-3.jpg" class="portfolio__item-link"
@@ -166,7 +173,7 @@
                                                 srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
                                         </picture>
                                     </a>
-                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                    <figcaption>Фасады — матовая белая краска</figcaption>
                                 </figure>
                                 <figure class="portfolio__item">
                                     <a href="img/dest/files/portfolio_kitchen-4.jpg" class="portfolio__item-link"
@@ -190,7 +197,7 @@
                                                 srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.jpg 2x">
                                         </picture>
                                     </a>
-                                    <figcaption>Кухня в классическом стиле</figcaption>
+                                    <figcaption>Фасады — МДФ краска глянец и матовый ЛДСП</figcaption>
                                 </figure>
                                 <figure class="portfolio__item">
                                     <a href="img/dest/files/portfolio_kitchen-5.jpg" class="portfolio__item-link"
@@ -731,21 +738,15 @@
             </div>
 
             <div class="portfolio__more-photos page__container">
-                <a class="button portfolio__more-photos-button" href="" target="_blank"
+                <a class="button portfolio__more-photos-button" href="https://vk.com/albums-100458873" target="_blank"
                     title="Перейти в группу ВКонтакте">Перейти в группу ВК
                     <svg class="portfolio__more-photos-icon" width="1rem" height="1rem" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7865 12.3932H1.60673V3.21342H6.73221V1.60669H0V14H12.3933V7.26775H10.7865V12.3932Z"/>
                         <path d="M8.64359 0V1.60673H11.2572L3.87695 8.98699L5.01238 10.1224L12.3926 2.74216V5.35578H13.9994V0H8.64359Z"/>
                     </svg>
                 </a>
-                <p class="portfolio__more-photos-text">Чтобы увидеть больше фотографий.</p>
+                <p class="portfolio__more-photos-text">— чтобы увидеть больше фотографий.</p>
             </div>
-
-            <!-- <div class="swiper-navigation">
-                <div class="swiper-button swiper-button-prev"></div>
-                <div class="swiper-pagination swiper-pagination-bullets"></div>
-                <div class="swiper-button swiper-button-next"></div>
-            </div> -->
 
         </section>
 
@@ -760,8 +761,7 @@
                 <div class="technologies__item">
                     <div class="technologies__col-1">
                         <h3 class="technologies__subtitle">Подсветка <br class="page__br--tablet"> рабочей зоны</h3>
-                        <p class="technologies__text">Для удобства и эстетичности устанавливаем подсветку рабочей зоны и
-                            стеклянных полок.</p>
+                        <p class="technologies__text">Для удобства и эстетичности устанавливаем подсветку рабочей зоны и стеклянных полок.</p>
                     </div>
                     <div class="technologies__image technologies__image--light" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
@@ -777,8 +777,7 @@
                 <div class="technologies__item">
                     <div class="technologies__col-1">
                         <h3 class="technologies__subtitle">Фасады</h3>
-                        <p class="technologies__text">Различные материалы фасадов: ЛДСП, МДФ, пластик, классические под
-                            дерево, пленочные, натуральное дерево.</p>
+                        <p class="technologies__text">Различные материалы фасадов: ЛДСП, МДФ, пластик, классические под дерево, пленочные, натуральное дерево.</p>
                     </div>
                     <div class="technologies__image technologies__image--facades" data-aos="fade-left" data-aos-once="false"></div>
                 </div>
@@ -814,7 +813,7 @@
                     <h2 class="about__title page__section-title">О студии <br> Дизайн-сити</h2>
                     <div class="about__text-wrapper">
                         <p class="about__text">Разрабатываем и реализуем индивидуальные проекты мебели с 2001 года.
-                            При проектировании мы прорабатываем дизайн, конструктив изделий, эргономику, подбираем
+                            В своих проектах мы прорабатываем дизайн, конструктив изделий, эргономику, подбираем
                             материалы
                             и фурнитуру.</p>
                         <p class="about__text">Все, что мы делаем, строится вокруг вас, ваших потребностей и вашего
@@ -850,186 +849,139 @@
                     </li>
                 </ul>
 
-                <b class="about__amount">Более 2000 выполненных проектов</b>
+                <b class="about__amount">Более ??? выполненных проектов</b>
 
             </div>
-            <div class="about__amount-slider">
+            <div class="about__amount-slider-wrapper">
+                <div class="about__amount-slider" data-bottom-top="transform: translateX(0px)" data-top-bottom="transform: translateX(-480px)">
 
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-1.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-1.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-1.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-1.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-1.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-1.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-1.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-1.jpg"
-                        alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-2.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-2.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-2.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-2.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-2.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-2.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-2.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-2.jpg"
-                        alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-2.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-2.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-2@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-3.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-3.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-3@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-3.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-3.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-3@2x.jpg 2x">
-                </picture>
-
-                <div></div>
-                <div></div>
-
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-3.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-3.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-4.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-4.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-4.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-4.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-4.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-4.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-5.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_other-5.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-5.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_office-5.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-5.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_living-5.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-5.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-5.jpg"
-                        alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-5@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-4.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-4.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-4@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-5.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-5.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-5@2x.jpg 2x">
-                </picture>
-                <picture class="about__amount-image">
-                    <source
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-3.webp 1x"
-                        type="image/webp">
-                    <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-3.jpg" alt="Кухня в классическом стиле"
-                        srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
-                </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-1.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-1.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-1@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-1.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_office-1.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-1@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-1.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_living-1.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-1@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-1.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-1.jpg"
+                            alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-1@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-2.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_other-2.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-2@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-2.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_office-2.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-2@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-2.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_living-2.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-2@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_cupboard-2.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_cupboard-2.jpg"
+                            alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_cupboard-2@2x.jpg 2x">
+                    </picture>
+                    
+    
+                    <div></div>
+                    <div></div>
+    
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_kitchen-3.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_kitchen-3.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_kitchen-3@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-4.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_office-4.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-4@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-4.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_other-4.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-4@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-4.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_living-4.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-4@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-1.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_other-1.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-1@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_other-5.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_other-5.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_other-5@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_office-5.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_office-5.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_office-5@2x.jpg 2x">
+                    </picture>
+                    <picture class="about__amount-image">
+                        <source
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.webp 2x, img/dest/files/thumbnails/mobile/portfolio_living-5.webp 1x"
+                            type="image/webp">
+                        <img src="img/dest/files/thumbnails/mobile/portfolio_living-5.jpg" alt="Кухня в классическом стиле"
+                            srcset="img/dest/files/thumbnails/mobile/portfolio_living-5@2x.jpg 2x">
+                    </picture>
+                </div>
             </div>
         </section>
 
@@ -1039,12 +991,12 @@
                 <h2 class="process__title page__section-title">Как мы <br> работаем</h2>
                 <div class="process__text-wrapper">
                     <p class="process__text">
-                        Мы предоставляем полный набор услуг — от консультации дизайнера и разработки дизайн-проекта
+                        Предоставляем полный набор услуг — от консультации дизайнера и разработки дизайн-проекта
                         до доставки
                         и сборки готовой мебели в вашем доме.
                     </p>
                     <p class="process__text">
-                        За счет собственного производства мы строго придерживаемся согласованных сроков выполнения
+                        За счет собственного производства строго придерживаемся согласованных сроков выполнения
                         заказа.
                     </p>
                 </div>
@@ -1079,7 +1031,9 @@
                             И уберем за собой мусор.</span>
                     </li>
                 </ul>
-                <div class="process__image" data-aos="fade-up" data-aos-delay="200"></div>
+                <div class="process__image-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process__image"></div>
+                </div>
             </div>
         </section>
 
@@ -1089,19 +1043,19 @@
                 <b class="cta__message">Создайте <br class="page__br--mobile"> уникальный интерьер <br
                         class="page__br--1024"> вместе с нами</b>
                 <p class="cta__text">Оставьте заявку и мы позвоним вам, или напишем в мессенджере, <br
-                        class="page__br--tablet page__br--1024"> для консультации по всем
+                        class="page__br--tablet page__br--1024"> для консультации по всем
                     интересующим вопросам.</p>
-                <form class="cta__form request-form" action="">
+                <form class="cta__form request-form" action="php/telegram.php" method="POST">
                     <div class="request-form__input-wrapper">
                         <label for="name" class="visually-hidden">Ваше имя</label>
-                        <input class="request-form__input request-form__input--name" id="name" type="text"
-                            placeholder="Ваше имя">
+                        <input class="request-form__input request-form__input--name" name="user_name" id="name" type="text"
+                            placeholder="Ваше имя" required>
                         <label for="phone-number" class="visually-hidden">Ваш номер телефона</label>
-                        <input class="request-form__input" id="phone-number" type="tel" placeholder="Номер телефона">
+                        <input class="request-form__input" name="user_phone" id="phone-number" type="tel" placeholder="Номер телефона" required>
                     </div>
                     <div class="request-form__input-wrapper">
                         <label class="request-form__checkbox" for="messenger">
-                            <input id="messenger" type="checkbox"> Напишите в мессенджере
+                            <input id="messenger" type="checkbox" name="messenger"> Напишите в мессенджере
                         </label>
                         <button class="request-form__button button" type="submit">Отправить</button>
                     </div>
@@ -1113,32 +1067,37 @@
                 </div>
             </div>
             <hr class="page__hr-2">
-            <ul class="cta__social-links social-links">
-                <li class="social-links__item">
-                    <a href="" class="social-links__link" title="Мы ВКонтакте">
-                        <svg class="social-links__icon" width="48" height="48">
-                            <use xlink:href="img/dest/images/sprite.svg#icon-vk"></use>
-                        </svg>
-                        <span class="visually-hidden">ВКонтакте</span>
-                    </a>
-                </li>
-                <li class="social-links__item">
-                    <a href="" class="social-links__link" title="Написать в WhatsApp">
-                        <svg class="social-links__icon" width="48" height="48">
-                            <use xlink:href="img/dest/images/sprite.svg#icon-whatsapp"></use>
-                        </svg>
-                        <span class="visually-hidden">Воцап</span>
-                    </a>
-                </li>
-                <li class="social-links__item">
-                    <a href="" class="social-links__link" title="Связаться в Telegram">
-                        <svg class="social-links__icon" width="48" height="48">
-                            <use xlink:href="img/dest/images/sprite.svg#icon-telegram"></use>
-                        </svg>
-                        <span class="visually-hidden">Телеграм</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="cta__footer">
+                <ul class="cta__social-links social-links">
+                    <li class="social-links__item">
+                        <a href="https://vk.com/design.city" class="social-links__link" title="Мы ВКонтакте" target="_blank">
+                            <svg class="social-links__icon" width="3rem" height="3rem">
+                                <use xlink:href="img/dest/images/sprite.svg#icon-vk"></use>
+                            </svg>
+                            <span class="visually-hidden">ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="https://api.whatsapp.com/send?phone=79600956937" class="social-links__link" title="Написать в WhatsApp" target="_blank">
+                            <svg class="social-links__icon" width="3rem" height="3rem">
+                                <use xlink:href="img/dest/images/sprite.svg#icon-whatsapp"></use>
+                            </svg>
+                            <span class="visually-hidden">Воцап</span>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="tg://resolve?domain=dcity12" class="social-links__link" title="Связаться в Telegram" target="_blank">
+                            <svg class="social-links__icon" width="3rem" height="3rem">
+                                <use xlink:href="img/dest/images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                            <span class="visually-hidden">Телеграм</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="cta__privacy">
+                    Оставляя заявку, вы принимаете условия <a href="">Политики защиты персональной информации</a>
+                </p>
+            </div>
         </section>
 
         <section class="contacts" id="contacts">
@@ -1188,24 +1147,24 @@
             <p class="footer__copyright">© 2001-2021 Дизайн-сити</p>
             <ul class="footer__social social-links">
                 <li class="social-links__item">
-                    <a href="" class="social-links__link">
-                        <svg class="social-links__icon" width="48" height="48">
+                    <a href="https://vk.com/design.city" class="social-links__link" title="Мы ВКонтакте" target="_blank">
+                        <svg class="social-links__icon" width="3rem" height="3rem">
                             <use xlink:href="img/dest/images/sprite.svg#icon-vk"></use>
                         </svg>
                         <span class="visually-hidden">ВКонтакте</span>
                     </a>
                 </li>
                 <li class="social-links__item">
-                    <a href="" class="social-links__link">
-                        <svg class="social-links__icon" width="48" height="48">
+                    <a href="https://api.whatsapp.com/send?phone=79600956937" class="social-links__link" title="Написать в WhatsApp" target="_blank">
+                        <svg class="social-links__icon" width="3rem" height="3rem">
                             <use xlink:href="img/dest/images/sprite.svg#icon-whatsapp"></use>
                         </svg>
                         <span class="visually-hidden">Воцап</span>
                     </a>
                 </li>
                 <li class="social-links__item">
-                    <a href="" class="social-links__link">
-                        <svg class="social-links__icon" width="48" height="48">
+                    <a href="tg://resolve?domain=dcity12" class="social-links__link" title="Связаться в Telegram" target="_blank">
+                        <svg class="social-links__icon" width="3rem" height="3rem">
                             <use xlink:href="img/dest/images/sprite.svg#icon-telegram"></use>
                         </svg>
                         <span class="visually-hidden">Телеграм</span>

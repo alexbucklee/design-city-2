@@ -45,14 +45,20 @@
 .contacts__dt {
     margin-bottom: .5rem;
 
-    font-weight: 700;
-    font-size: 1rem;
+    font-family: 'SourceCodePro', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: $dark-green;
 }
 
 .contacts__dd {
     margin: 0;
     margin-bottom: 1.5rem;
-    font-size: .9375rem;
 
     @media (min-width: $w768) {
         margin: 0;

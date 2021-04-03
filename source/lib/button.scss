@@ -1,22 +1,22 @@
-.button {    
+.button {
     padding: 0;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: .8125rem;
-    padding-bottom: .6875rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 
     border: none;
     background-color: transparent;
 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: .6875rem;
+    font-family: "SourceCodePro", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: .75rem;
     line-height: 1.5rem;
 
-    letter-spacing: 0.16em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 
-    color: #F4F6F4;
+    color: $bg-color;
 
     display: inline-block;
     border-radius: .5rem;

@@ -58,14 +58,13 @@
     padding-bottom: 1rem;
     text-decoration: none;
     
-    font-size: .75rem;
-    line-height: 1.5rem;
+    font-family: "SourceCodePro", Arial, Helvetica, sans-serif;
+    font-size: .8125rem;
     font-weight: 500;
-    letter-spacing: 0.16em;
+    line-height: 1.5rem;
+
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-
-    /* dark green */
-
     color: $dark-green;
 
     opacity: 0.4;

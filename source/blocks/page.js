@@ -103,13 +103,41 @@ function bodyUnfixPosition() {
 let startNav = document.querySelector('.start__nav');
 let mainNav = document.querySelector('.main-nav');
 let mainNavDiv = document.querySelector('.main-nav__div');
+let buttonRequest = document.querySelector('.main-nav__button-request');
 
-window.addEventListener('scroll', function() {
+function addNavBG() {
   if (window.pageYOffset >= 656) {
     startNav.classList.add('start__nav--bg');
     mainNav.style.height = '5rem';
+    buttonRequest.style.transform = 'translateY(0)';    
+    buttonRequest.style.visibility = 'visible';
+    buttonRequest.style.opacity = '0.8';
   } else {    
     startNav.classList.remove('start__nav--bg');
     mainNav.style.height = null;
+    buttonRequest.style.transform = 'translateY(100%)';
+    buttonRequest.style.visibility = 'hidden';
+    buttonRequest.style.opacity = '0';
   }
+}
+
+function ifDesktop() {
+  if (window.innerWidth >= 1024) {
+    window.addEventListener('scroll', addNavBG);
+  } else {
+    window.removeEventListener('scroll', addNavBG);
+  }
+}
+
+ifDesktop();
+
+window.addEventListener('resize', function() {
+  ifDesktop();
 })
+
+// Skrollr
+
+var s = skrollr.init({
+  smoothScrolling = false,
+  forceHeight = false,
+});

@@ -1,7 +1,6 @@
 .page {
     height: 100%;
     background-color: $bg-color;
-    // scroll-behavior: smooth;
 
     @media (min-width: 1440px) {
         font-size: 1.111vw;
@@ -9,14 +8,14 @@
 }
 
 .page__body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: .875rem;
+    font-family: "SourceSansPro", Arial, Helvetica, sans-serif;
+    font-size: .9375rem;
     line-height: 1.5rem;
 
     color: $black85;
 
     @media (min-width: $w1024) {
-        font-size: .9375rem;
+        font-size: 1rem;
     }
 }
 
@@ -91,7 +90,7 @@ img {
 }
 
 .page__section-title {
-    font-family: "Prata", 'Times New Roman', Times, serif;
+    font-family: "SourceSerifPro", 'Times New Roman', Times, serif;
     font-size: 2rem;
     line-height: 2.25rem;
     font-weight: 400;

@@ -38,8 +38,6 @@
     margin: 0;
     margin-bottom: 1.5rem;
 
-    max-width: 30rem;
-
     @media (min-width: $w768) {
         margin: 0;
     }
@@ -141,11 +139,11 @@
     border-radius: 1rem;
 
     @media (min-width: $w1024) {
-        opacity: 0.7;
-        transition: opacity 0.2s ease-out;
 
         &:hover {
-            opacity: 1;
+            .portfolio__img {
+                transform: scale(1.03);
+            }
         }
     }
 }
@@ -158,6 +156,8 @@
     box-sizing: border-box;
     border-radius: 1rem;
     border: 1px solid $black10;
+
+    transition: transform 0.2s ease-out;
 }
 
 .portfolio__items-slider {
