@@ -50,3 +50,63 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    &--image {
+        opacity: 0;
+        .loaded & {
+            animation-name: fade-in;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation-name: fade-up;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-in-up {        
+    transform: translateY(100%);
+    animation: slide-in-up 0.5s ease-out forwards;
+}

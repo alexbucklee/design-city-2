@@ -140,4 +140,7 @@ window.addEventListener('resize', function() {
 var s = skrollr.init({
   smoothScrolling = false,
   forceHeight = false,
+  mobileCheck = function() {
+    return false;
+  }
 });

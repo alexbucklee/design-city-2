@@ -108,6 +108,8 @@ function buildcopy() {
             'source/*.ico',
             'source/**/*.html',
             'source/**/*.php',
+            'source/*.png',            
+            'source/*.webmanifest',
         ], {
             base: 'source'
         })
