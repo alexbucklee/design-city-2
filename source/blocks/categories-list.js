@@ -22,19 +22,5 @@ document.querySelectorAll('.categories-list__link').forEach((item) =>
         document.getElementById(id).classList.add('swiper-container');
 
         document.getElementById(id).querySelector('.portfolio__items-slider').scrollLeft = 0;
-        
-        // swiper.destroy();
-        // swiper = new Swiper('.swiper-container', {
-        //     spaceBetween: 16,
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //         clickable: true,
-        //     },
-        //     navigation: {
-
-        //         nextEl: '.swiper-button-next',
-        //         prevEl: '.swiper-button-prev',
-        //     },
-        // });
     })
 )

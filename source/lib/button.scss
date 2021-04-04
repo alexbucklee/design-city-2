@@ -28,4 +28,11 @@
     &:hover {
         background: $hover-color;
     }
+
+    &:disabled {
+        opacity: 0.4;
+        &:hover {
+            background-color: $dark-green;
+        }
+    }
 }

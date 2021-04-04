@@ -1045,23 +1045,23 @@
                 <p class="cta__text">Оставьте заявку и мы позвоним вам, или напишем в мессенджере, <br
                         class="page__br--tablet page__br--1024"> для консультации по всем
                     интересующим вопросам.</p>
-                <form class="cta__form request-form" action="php/telegram.php" method="POST">
+                <form class="cta__form request-form">
                     <div class="request-form__input-wrapper">
                         <label for="name" class="visually-hidden">Ваше имя</label>
                         <input class="request-form__input request-form__input--name" name="user_name" id="name" type="text"
-                            placeholder="Ваше имя" required>
+                            placeholder="Ваше имя" title="Как к вам обращаться?" required>
                         <label for="phone-number" class="visually-hidden">Ваш номер телефона</label>
-                        <input class="request-form__input" name="user_phone" id="phone-number" type="tel" placeholder="Номер телефона" required>
+                        <input class="request-form__input" name="user_phone" id="phone-number" type="tel" placeholder="Номер телефона" title="Введите номер телефона для связи" required>
                     </div>
                     <div class="request-form__input-wrapper">
                         <label class="request-form__checkbox" for="messenger">
-                            <input id="messenger" type="checkbox" name="messenger"> Напишите в мессенджере
+                            <input id="messenger" type="checkbox" name="messenger" title="Поставьте галочку, чтобы мы написали вам в мессенджере"> Напишите в мессенджере
                         </label>
-                        <button class="request-form__button button" type="submit">Отправить</button>
+                        <button class="request-form__button button" type="submit" disabled>Отправить</button>
                     </div>
                 </form>
 
-                <div class="cta__form-done">
+                <div class="cta__form-done fade-in" style="animation-duration: 0.2s;">
                     <b class="cta__message">Спасибо за заявку!</b>
                     <p class="cta__text">Мы свяжемся с вами и ответим на все возникшие вопросы.</p>
                 </div>
