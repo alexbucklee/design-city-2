@@ -207,52 +207,47 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
 
+/* Swiper
+**************************************************************/
+var swiper = Swiper;
+var init = false;
 
-// /* Swiper
-// **************************************************************/
-// var swiper = Swiper;
-// var init = false;
+/* Which media query
+**************************************************************/
+function swiperMode() {
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1023.9px)');
+    let desktop = window.matchMedia('(min-width: 1024px)');
 
-// /* Which media query
-// **************************************************************/
-// function swiperMode() {
-//     let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1023.9px)');
-//     let desktop = window.matchMedia('(min-width: 1024px)');
+    // Disable (for mobile)
+    if(mobile.matches) {
+        swiper.destroy();
+        init = false;
+    }
 
-//     // Disable (for mobile)
-//     if(mobile.matches) {
-//         swiper.destroy();
-//         init = false;
-//     }
+    // Enable (for desktop)
+    else if(desktop.matches) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper('.swiper-container', {
+                freeMode: true,
+                slidesPerView: 'auto',
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    draggable: true,
+                  },
+            });
+        }
+    }
+}
 
-//     // Enable (for desktop)
-//     else if(desktop.matches) {
-//         if (!init) {
-//             init = true;
-//             swiper = new Swiper('.swiper-container', {
-//                 spaceBetween: 16,
-//                 pagination: {
-//                     el: '.swiper-pagination',
-//                     clickable: true,
-//                 },
-//                 navigation: {
+/* On Load
+**************************************************************/
+window.addEventListener('load', function() {
+    swiperMode();
+});
 
-//                     nextEl: '.swiper-button-next',
-//                     prevEl: '.swiper-button-prev',
-//                 },
-//             });
-//         }
-//     }
-// }
-
-// /* On Load
-// **************************************************************/
-// window.addEventListener('load', function() {
-//     swiperMode();
-// });
-
-// /* On Resize
-// **************************************************************/
-// window.addEventListener('resize', function() {
-//     swiperMode();
-// });
+/* On Resize
+**************************************************************/
+window.addEventListener('resize', function() {
+    swiperMode();
+});

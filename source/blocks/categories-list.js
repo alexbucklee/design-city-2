@@ -3,12 +3,19 @@ document.querySelectorAll('.categories-list__link').forEach((item) =>
         e.preventDefault();
         const id = e.target.getAttribute('href');
 
-        document.querySelectorAll('.portfolio__category-gallery').forEach(
-            (item) => item.classList.remove('portfolio__category-gallery--enabled')
+        let portfolioCategoryGalleries = document.querySelectorAll('.portfolio__category-gallery');
+
+        portfolioCategoryGalleries.forEach(
+            (item) => item.classList.remove('portfolio__category-gallery--enabled'),
+            
         );
 
-        document.querySelectorAll('.portfolio__category-gallery').forEach(
+        portfolioCategoryGalleries.forEach(
             (item) => item.classList.remove('swiper-container')
+        );
+
+        portfolioCategoryGalleries.forEach(
+            (item) => item.classList.remove('slideInRight')
         );
 
         document.querySelectorAll('.categories-list__item').forEach(
@@ -17,10 +24,25 @@ document.querySelectorAll('.categories-list__link').forEach((item) =>
 
         item.parentElement.classList.add('categories-list__item--current');
 
-        document.getElementById(id).classList.add('portfolio__category-gallery--enabled');
+        let targetCategory = document.getElementById(id);
 
-        document.getElementById(id).classList.add('swiper-container');
+        targetCategory.classList.add('portfolio__category-gallery--enabled');
 
-        document.getElementById(id).querySelector('.portfolio__items-slider').scrollLeft = 0;
+        targetCategory.classList.add('swiper-container');
+
+        targetCategory.classList.add('slideInRight');
+
+        targetCategory.querySelector('.portfolio__items-slider').scrollLeft = 0;
+
+        swiper.destroy();
+
+        swiper = new Swiper('.swiper-container', {
+            freeMode: true,
+            slidesPerView: 'auto',
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+              },
+        });
     })
 )

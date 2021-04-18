@@ -18,7 +18,8 @@ const svgstore = require('gulp-svgstore');
 
 function browsersync() {
     sync.init({
-        proxy: 'design-city-2/source/',
+        // proxy: 'design-city-2/source/',
+        server: { baseDir: 'source/' },
         notify: false,
         online: true
     })
